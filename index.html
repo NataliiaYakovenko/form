@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+
+      <form-header class="header">
+        <h1>Contact form</h1>
+        <h2>
+          Please fill in your information and we'll be sending your order.
+        </h2>
+      </form-header>
+
+      <form-information class="information">
+        <div class="name">
+          <label class="your-name" for="name1" for="name2">Your name</label>
+          <input type="first-name" placeholder="First name" id="name1" />
+          <input type="last-name" placeholder="Last name" id="name2" />
+        </div>
+
+        <div class="email">
+          <label for="mail">Your mail</label>
+          <input type="your-mail" placeholder="Your-mail@mail.com" id="mail" />
+        </div>
+
+        <div class="phone">
+          <label class="your-phone" for="phone1" for="phone2" for="phone3">Phone*</label>
+          <input type="phone" placeholder="+380 (00)" id="phone1" />
+          <input type="phone" placeholder="000" id="phone2" />
+          <input type="phone" placeholder="0000" id="phone3" />
+        </div>
+
+        <div class="message-subject">
+          <label>Message subject*</label>
+          <select class="other" name="message-subject" placeholder="other">
+            <option value="other">Other</option>
+            <option value="education">Education</option>
+            <option value="address">Address</option>
+            <option value="hobbies">Hobbies</option>
+            <option value="marital-status">Marital status</option>
+            <option value="experience">Experience</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <label>Message*</label>
+          <textarea class="your-message" name="message"></textarea>
+        </div>
+      </form-information>
+
+      <form-footer class="footer">
+        <div class="strip"></div>
+        <button class="submit" type="submit">SUBMIT FORM</button>
+      </form-footer>
+      
+    </form>
+  </body>
+</html>
