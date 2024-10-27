@@ -9,91 +9,139 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url(./assets/istockphoto-2162849344-612x612.jpg);
-  background-size:cover;
+  background-size: cover;
   height: 100vh;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .form {
-  max-width: 1300px;
-  min-width: 500px;
-  max-height: 600px;
+  min-width: 80%;
+  min-height: 90%;
   border: 5px solid rgb(100, 77, 77);
   box-shadow: 0px 0px 20px black;
   background-color: transparent;
   padding: 30px;
-  color:rgb(73, 44, 44);
+  color: rgb(73, 44, 44);
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
 }
 
-h1,h2{
-  margin-bottom: 50px;
-
+h1,
+h2 {
+  margin-bottom: 3%;
 }
 
 .information {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+  margin-top: 3%;
 }
 
-.name, .email, .phone, .message-subject, .message{
+.name,
+.email,
+.phone,
+.message-subject,
+.message {
   display: flex;
-  justify-content: space-between;
 }
 
-.your-name, .your-phone{
-margin-right: auto;
+.your-name,
+.your-mail,
+.your-phone,
+.text-message,
+.option-message {
+  margin-right: auto;
 }
 
-#name1, #name2{
+#name1,
+#name2,
+#mail,
+#phone1,
+#phone2,
+#phone3,
+.other,
+.your-message {
+  background-color: rgb(234, 216, 216);
+}
+
+#name1::placeholder,
+#name2::placeholder,
+#mail::placeholder,
+#phone1::placeholder,
+#phone2::placeholder,
+#phone3::placeholder{
+color: white;
+}
+
+#name1:invalid,
+#name2:invalid,
+#mail:invalid,
+#phone1:invalid,
+#phone2:invalid,
+#phone3:invalid{
+  background-color: rgb(179, 174, 174);
+  color: red;
+}
+
+#name1:valid,
+#name2:valid,
+#mail:valid,
+#phone1:valid,
+#phone2:valid,
+#phone3:valid{
+  background-color: rgb(234, 216, 216);
+}
+
+#name1,
+#name2 {
   padding: 5px;
-  width: 450px;
-  margin-left: 15px;
-  background-color: rgb(229, 217, 217);
-
+  width: 39.5%;
+  margin-left: 1%;
 }
-  #mail,.other{
-    padding: 5px;
-    width: 915px;
-    background-color: rgb(229, 217, 217);
-  }
+#mail {
+  padding: 5px;
+  width: 80%;
+  margin-left: 10%;
+}
 
-  #phone1, #phone2, #phone3{
-    padding: 5px;
-    width: 295px;
-    margin-left: 15px;
-    background-color: rgb(229, 217, 217);
-    
-  }
-  .your-message{
-    padding: 20px;
-    width: 915px;
-    background-color: rgb(229, 217, 217);
-  }
-  
-  .strip {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(45, 32, 32);
-  }
+#phone1,
+#phone2,
+#phone3{
+  padding: 5px;
+  width: 26%;
+  margin-left: 1%;
+}
 
-  .submit{
-    padding: 10px;
-    width: 915px;
-    margin-left: 315px;
-    background-color: transparent;
-    color:rgb(73, 44, 44);
-    font-weight: bolder;
-    font-size: large;
-  }
+.other {
+  padding: 5px;
+  width: 80%;
+  margin-left: 5%;
+}
+.your-message {
+  width: 80%;
+  margin-left: 10%;
+  height: 80px;
+}
+textarea {
+  resize: none;
+}
 
-    
+.strip {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(45, 32, 32);
+}
 
-
+.submit {
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(73, 44, 44);
+  font-weight: bolder;
+  font-size: large;
+  width: 80%;
+  margin-left: 20%;
+}

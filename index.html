@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form class="form">
+    <form class="form" action="" method="">
 
       <form-header class="header">
         <h1>Contact form</h1>
@@ -19,37 +19,37 @@
       <form-information class="information">
         <div class="name">
           <label class="your-name" for="name1" for="name2">Your name</label>
-          <input type="first-name" placeholder="First name" id="name1" />
-          <input type="last-name" placeholder="Last name" id="name2" />
+          <input type="text" placeholder="First name" minlength="2" id="name1" name="first-username" autofocus required />
+          <input type="text" placeholder="Last name" minlength="2" id="name2" name="last-username" required />
         </div>
 
         <div class="email">
-          <label for="mail">Your mail</label>
-          <input type="your-mail" placeholder="Your-mail@mail.com" id="mail" />
-        </div>
+          <label class="your-mail" for="mail">Your mail</label>
+          <input type="email" placeholder="Your-mail@mail.com" id="mail" name="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
+          </div>
 
         <div class="phone">
-          <label class="your-phone" for="phone1" for="phone2" for="phone3">Phone*</label>
-          <input type="phone" placeholder="+380 (00)" id="phone1" />
-          <input type="phone" placeholder="000" id="phone2" />
-          <input type="phone" placeholder="0000" id="phone3" />
+          <label class="your-phone" for="phone1" for="phone2" for="phone3"> Phone*</label>
+          <input type="tel" placeholder="000" maxlength="3" id="phone1" name="phone" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/>
+          <input type="tel" placeholder="000" maxlength="3" id="phone2" name="phone" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/>
+          <input type="tel" placeholder="0000" maxlength="4" id="phone3" name="phone" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/>
         </div>
 
         <div class="message-subject">
-          <label>Message subject*</label>
-          <select class="other" name="message-subject" placeholder="other">
+          <label class="option-message">Message subject*</label>
+          <select class="other" name="message-subject" placeholder="other" name="message-subject">
             <option value="other">Other</option>
-            <option value="education">Education</option>
-            <option value="address">Address</option>
-            <option value="hobbies">Hobbies</option>
-            <option value="marital-status">Marital status</option>
-            <option value="experience">Experience</option>
+            <option value="subject1">Subject1</option>
+            <option value="subject2">Subject2</option>
+            <option value="subject3">Subject3</option>
+            <option value="subject4">Subject4</option>
+            <option value="subject5">Subject5</option>
           </select>
         </div>
 
         <div class="message">
-          <label>Message*</label>
-          <textarea class="your-message" name="message"></textarea>
+          <label class="text-message">Message*</label>
+          <textarea class="your-message" name="message" name="message"></textarea>
         </div>
       </form-information>
 
